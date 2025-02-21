@@ -1,0 +1,92 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #b43494, #3e073d);
+ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.page-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 20px; /* Distance from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between stopwatch and laps */
+}
+
+.stopwatch {
+  
+    background: linear-gradient(135deg, #b768a3, #3e073d);
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(212, 206, 206, 0.3);
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    font-size: 16px;
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#start { background: green; }
+#pause { background: rgb(241, 181, 69); }
+#reset { background: red; }
+#lap {  background: linear-gradient(135deg, #cfb4c8, #e246df);}
+
+.laps-container {
+  
+    background: linear-gradient(135deg, #cfb4c8, #e246df);
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+#laps {
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+#laps li {
+    list-style: none;
+    
+    padding: 5px;
+    margin: 3px 0;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #cfb4c8, #e246df);
+}
